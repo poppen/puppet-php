@@ -33,7 +33,6 @@ define php::extension::pdo_pgsql(
     php_version      => $php,
 
     configure_params => $configure_params,
-    require          => Package['postgresql'],
   }
 
   # Add config file once extension is installed
